@@ -6,7 +6,6 @@ class Odb < Formula
   sha1 '7bdde23582d8e6f57d5a2fffd9fa77ab35de5bcc'
 
   def install
-    bin.mkpath
     prefix.install Dir['*']    
   end
 end
