@@ -6,9 +6,7 @@ class Odb < Formula
   sha1 '7bdde23582d8e6f57d5a2fffd9fa77ab35de5bcc'
 
   def install
-    prefix.install Dir['bin/*']
-    prefix.install Dir['etc/odb']
-    prefix.install Dir['lib/*']
-    prefix.install Dir['man/man1/*']
+    prefix.install 'bin/odb', 'etc/odb/default.options', 'lib/odb/odb.so', 'man/man1/odb.1'
+    prefix.install Dir['lib/odb/i686-apple-darwin8']
   end
 end
