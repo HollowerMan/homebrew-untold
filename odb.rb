@@ -7,7 +7,7 @@ class Odb < Formula
 
   def install
     prefix.install Dir['bin/*']
-    prefix.install Dir['etc/*']
+    prefix.install Dir['etc/odb']
     prefix.install Dir['lib/*']
     prefix.install Dir['man/man1/*']
   end
